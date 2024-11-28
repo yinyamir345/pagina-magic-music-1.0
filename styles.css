@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c6dee7;
+}
+
+.header {
+  width: 1200px;
+  height: 250px;
+  margin: 20px 20px 20px 20px;
+  float: right;
+}
+
+.logo img {
+  float: left;
+  margin: 10px;
+  width: 250px;
+  height: 230px;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar {
+  width: 680px;
+  height: 50px;
+  float: left;
+  margin: 5px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.navbar a:hover {
+  color: rgb(252, 121, 121);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+  width: 800px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.title {
+  margin-top: 0.5em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Arial", sans-serif;
+  font-size: 1.5em;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.subtitulo {
+  margin-top: 1em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.texto {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.parrafo {
+  font-size: 16px;
+}
+
+.login {
+  position: absolute;
+  top: 40%;
+  right: -750px;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .titulo {
+    text-align: center;
+  }
+}
+
+.login-container {
+  background-color: #5e1515;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: azure;
+  font-size: 40px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 280px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container input[type="submit"] {
+  width: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: #ffa703;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (max-width: 1100px) {
+  .header {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .logo img {
+    float: none;
+    margin: 20px auto;
+    width: 250px;
+    height: auto;
+    display: block;
+  }
+
+  .navbar {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin: 10px 0;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 15px;
+  }
+
+  .container {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo img {
+    width: 200px;
+    height: 400px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  .container {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar.responsive ul {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar a:last-child {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Magic Music</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="logo Magic music.png" />
+      </div>
+
+      <div class="nav">
+        <div class="navbar">
+          <ul>
+            <a href="bienvenidos.html">home</a>
+            <a href="Inicio sesion.html">inicio</a>
+            <a href="Musica.html">Musica</a>
+            <a href="podcats.html">podcats</a>
+            <a href="Biografias.html">Biografias</a>
+            <a href="Galeria.html">Galeria</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="Contactos.html">Contactos</a>
+          </ul>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <script>
+          function toggleMenu() {
+            var navbar = document.querySelector(".navbar");
+            if (navbar.className === "navbar") {
+              navbar.className += " responsive";
+            } else {
+              navbar.className = "navbar";
+            }
+          }
+        </script>
+      </div>
+    </div>
+    <div class="main">
+      <h2 class="title">¡Bienvenidos a Magic Music!</h2>
+      <h4 class="subtitulo">donde la magia de la música nunca termina</h4>
+      <div class="texto">
+        <p class="parrafo">
+          Nos alegra enormemente que hayas decidido unirte a nuestra comunidad
+          de amantes de la música. En este espacio mágico, encontrarás un
+          refugio lleno de melodías, ritmos y armonías que te acompañarán en
+          cada momento de tu vida. <br /><br />
+          ¿Qué te espera en Magic Music? <br />Exploración Musical: Navega a
+          través de una amplia variedad de géneros y artistas. Desde los
+          clásicos atemporales hasta los éxitos más recientes, aquí hay algo
+          para cada gusto.<br /><br />
+          Listas de Reproducción Personalizadas: Crea tus propias listas de
+          reproducción y descubre nuevas canciones que se adapten a tu estado de
+          ánimo y a tus momentos especiales. <br /><br />Conexión y Comunidad:
+          Comparte tus descubrimientos musicales con otros visitantes y
+          conéctate con personas que comparten tu pasión por la música.
+          <br /><br />Consejos para disfrutar al máximo: <br />No dudes en
+          explorar todas nuestras categorías y utilizar la función de búsqueda
+          para encontrar tus canciones favoritas.<br /><br />
+          Mantente atento a nuestras actualizaciones, ya que constantemente
+          añadimos nuevas melodías y sorpresas. <br />En Magic Music, creemos
+          que la música tiene el poder de transformar momentos y crear recuerdos
+          inolvidables.<br /><br />
+          ¡Esperamos que disfrutes de tu experiencia en nuestro rinconcito
+          musical y que encuentres la banda sonora perfecta para cada día!
+          <br />¡Bienvenido a Magic Music, donde la magia de la música nunca
+          termina!
+        </p>
+        <div class="login">
+          <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+              <input
+                type="text"
+                id="usuario"
+                placeholder="digite su nombre de usuario"
+                required
+              />
+              <input
+                type="password"
+                id="clave"
+                placeholder="digite su contraseña"
+                required
+              />
+              <input type="submit" value="Iniciar Sesión" />
+            </form>
+            <p id="errorMsg" style="color: red"></p>
+          </div>
+
+          <script src="login.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
